@@ -1,10 +1,10 @@
 /*
         //Progression 3
         // Functional component
-        const Container = () =>{
+        const Container = function(){
             return React.createElement(`div`,null,`Hey ProGrads! Welcome to React Learning`, React.createElement(`div`,null,`Let's rock and roll`) );
         }
-        // Render the Container
+
         const container = document.getElementById('react-container');
         ReactDOM.render(React.createElement(Container),container);
 
@@ -21,9 +21,6 @@
             render(){
                 return ( React.createElement(`div`,null,`Hey ProGrads! Welcome to React Learning`,React.createElement(`div`,null,`Let's rock and roll`)) );
             }
-
-
-
         }
 
         const container = document.getElementById('react-container');
@@ -38,12 +35,12 @@
                 super();
             }
             render() {
-            return (
-                <div>
-                    <div>Hey ProGrads! Welcome to React Learning</div>
-                    <div>Let's rock and roll </div>
-                </div>
-            );
+                return (
+                    <div>
+                        <div>Hey ProGrads! Welcome to React Learning</div>
+                        <div>Let's rock and roll </div>
+                    </div>
+                );
             }
         }
         
